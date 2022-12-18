@@ -14,7 +14,7 @@ app.listen(PORT, () => console.log(`${PORT}`));
 
 app.get("/", (req, res) => {
     supaFunc.getUsers()
-    .then(data => {console.log(data); res.json(data)})
+    .then(data => {res.json(data)})
 
     
 })
