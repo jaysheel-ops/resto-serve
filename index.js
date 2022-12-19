@@ -12,6 +12,7 @@ const root = {root: "."}
 const app =   express();
 require("dotenv").config();
 
+app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.listen(PORT, () => console.log(`${PORT}`));

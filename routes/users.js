@@ -35,9 +35,9 @@ router.post("/registration", async (req, res)  => {
     const state = await supaFunc.addUser(user)
 
     if(state) {
-        res.send("Success");
+        res.sendFile("/public/success.html", root);
     } else {
-        res.send(`Error ocurred`);
+        res.sendFile("/public/error.html", root);
     }
     
 })

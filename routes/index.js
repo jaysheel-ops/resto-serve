@@ -4,15 +4,15 @@ const router = express.Router();
 const root = {root: "."}
 
 router.get("/", (req, res) => {
-    res.sendFile("./static/index.html", root);
+    res.sendFile("./public/index.html", root);
 })
 
 router.get("/login", (req, res) => {
-    res.sendFile("./static/login.html", root)
+    res.sendFile("./public/login.html", root)
 })
 
 router.get("/signup", (req, res) => {
-    res.sendFile("./static/register.html", root)
+    res.sendFile("./public/signup.html", root)
 })
 
 module.exports = router;
