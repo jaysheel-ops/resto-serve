@@ -1,4 +1,5 @@
-const supabase = require("./supabase");
+const {supabase} = require("./supabase");
+const {getUser} = require("./getUser");
 const addUser = async ({name, email, password}) => {
 
     const user = await getUser({email:email}).then(user => {
@@ -18,3 +19,4 @@ const addUser = async ({name, email, password}) => {
         return false;
     }     
 }
+exports.addUser = addUser;
