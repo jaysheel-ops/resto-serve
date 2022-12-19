@@ -12,7 +12,7 @@ router.post("/login", async(req, res) => {
     if(user) {
         if(user[0].password === password) {
 
-        res.redirect('http://localhost:3000/browse')
+        res.redirect('/browse')
         } else {
             res.send("Failure! Enter correct email or pass")
         }
