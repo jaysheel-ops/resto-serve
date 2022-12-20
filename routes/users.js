@@ -13,9 +13,10 @@ router.post("/login", async (req, res) => {
     password = req.body.password_field
 
     const user = await supaFunc.getUser({ email })
-    req.session.user = user;
-    req.session.save();
+
     if (user) {
+        req.session.user = user;
+        req.session.save();
         if (user[0].password === password) {
 
             res.redirect('/')
