@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
 /* Base */
 :root {
   --clr-primary: #fe5722;
@@ -128,6 +129,7 @@ nav ul li a {
 #check {
   display: none;
 }
+
 /* End Menu */
 
 /* Hero Section */
@@ -158,6 +160,7 @@ nav ul li a {
 #hero-section .visual img {
   margin-left: auto;
 }
+
 /* End Hero Section */
 
 /* How It Works */
@@ -194,6 +197,7 @@ nav ul li a {
 .box:hover ion-icon {
   color: #fff;
 }
+
 /* End How It Works */
 
 /* About */
@@ -201,6 +205,7 @@ nav ul li a {
 #app .visual img {
   margin-right: auto;
 }
+
 /* End About */
 
 /* Restaurant Menu */
@@ -261,6 +266,7 @@ nav ul li a {
   font-size: 18px;
   font-weight: 500;
 }
+
 /* End Restaurant Menu */
 
 /* Testimonial */
@@ -278,6 +284,7 @@ nav ul li a {
   border-radius: 50%;
   margin-right: 20px;
 }
+
 /* End Testimonial */
 
 /* FAQ */
@@ -300,8 +307,8 @@ summary {
   font-weight: 600;
 }
 
-details[open] summary ~ * {
-  animation: open 1s ease-in-out;
+details[open] summary~* {
+  animation: open .3 ease-in;
 }
 
 @keyframes open {
@@ -315,6 +322,7 @@ details[open] summary ~ * {
     margin-top: 0;
   }
 }
+
 /* End FAQ */
 
 /* App */
@@ -352,6 +360,7 @@ details[open] summary ~ * {
 .download {
   margin: 30px 0;
 }
+
 /* End App */
 
 /* Footer */
@@ -392,6 +401,7 @@ details[open] summary ~ * {
   margin-top: 30px;
   border-top: 1px solid #b2b2b2;
 }
+
 /* End Footer */
 
 /* Responsive  */
@@ -440,7 +450,7 @@ details[open] summary ~ * {
     color: var(--clr-primary);
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     left: 0;
   }
 
@@ -552,6 +562,7 @@ details[open] summary ~ * {
     font-size: 17px;
   }
 }
+
 /* End Responsive  */
 
 
@@ -564,7 +575,7 @@ details[open] summary ~ * {
   right: 70px;
   text-decoration: none;
   padding: 8px 12px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 6px;
   box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.2);
   color: #fff;
