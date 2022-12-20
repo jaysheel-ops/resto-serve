@@ -20,7 +20,7 @@ router.post("/login", async (req, res) => {
 
             res.redirect('/')
         } else {
-            res.sendFile("/public/error/error.html", root);
+            res.sendFile("/public/error/login-error.html", root);
         }
     } else {
         res.sendFile("/public/error/login-error.html", root);
