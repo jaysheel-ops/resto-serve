@@ -42,7 +42,7 @@ Install and run Resto website on your local machine with npm.
 `
 
 - ### Change PORT 3000 to your custom PORT 
-    Eventuall you can also change the default port 3000 to any other port that your express server should run on.
+    Eventually you can also change the default port 3000 to any other port that your express server should run on.
 
     Just set the PORT variable in ".env" file to your desired port number.
 
