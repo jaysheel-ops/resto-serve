@@ -23,7 +23,7 @@ router.post("/login", async (req, res) => {
             res.sendFile("/public/error.html", root);
         }
     } else {
-        res.sendFile("/public/error.html", root);
+        res.sendFile("/public/error/login-error.html", root);
     }
 
 
@@ -36,13 +36,21 @@ router.post("/registration", async (req, res) => {
         password: req.body.password_field
     }
 
-    const state = await supaFunc.addUser(user)
+    console.log(user);
 
-    if (state) {
-        res.sendFile("/public/success.html", root);
-    } else {
+    if (user.name === "" || user.email === "" || user.password === "") {
         res.sendFile("/public/error.html", root);
+    } else {
+        const state = await supaFunc.addUser(user)
+
+        if (state) {
+            res.sendFile("/public/error/success.html", root);
+        } else {
+            res.sendFile("/public/error/signup-error.html", root);
+        }
+
     }
+
 
 })
 
