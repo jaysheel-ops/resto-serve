@@ -11,12 +11,11 @@ as an alternative for Firebase database.
 
 ## Installation
 
-Install and run Resto website on your local machine with npm
+Install and run Resto website on your local machine with npm.
 
 - ### Git Clone
 ```bash
   git clone https://github.com/jaysheel-ops/restaurant-website.git
-  
 ```
 
 - ### Install Dependency
@@ -36,13 +35,16 @@ Install and run Resto website on your local machine with npm
 
 `
   SUPABASE_KEY=YOUR_SERVICE_ROLE_API_KEY
+`
+
+`
   SUPABASE_URL=YOUR_PROJECT_URL
 `
 
 - ### Change PORT 3000 to your custom PORT 
-    Eventuall you can also change the default port 3000 to any other port that you want your express server to run on.
+    Eventuall you can also change the default port 3000 to any other port that your express server should run on.
 
-    Just set the PORT variable in ".env" file to your desired port number 
+    Just set the PORT variable in ".env" file to your desired port number.
 
 `
   PORT=YOUR_PORT
@@ -56,6 +58,7 @@ Install and run Resto website on your local machine with npm
 
 - ### Launch with Hot Reload Server
     With Hot Reload your Express server will reload automatically after every save. This saves your time by stopping and running the server automatically.
+
 ```bash
   nodemon index.js
 ```
